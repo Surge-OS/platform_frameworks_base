@@ -1809,7 +1809,8 @@ public class AudioDeviceInventory {
                     .set(MediaMetrics.Property.EVENT, "disconnectHearingAid")
                     .record();
             if (toRemove.size() > 0) {
-                final int delay = checkSendBecomingNoisyIntentInt(DEVICE_OUT_HEARING_AID,
+                /*final int delay = */
+                checkSendBecomingNoisyIntentInt(DEVICE_OUT_HEARING_AID,
                         AudioService.CONNECTION_STATE_DISCONNECTED, AudioSystem.DEVICE_NONE);
                 toRemove.stream().forEach(deviceAddress ->
                         makeHearingAidDeviceUnavailableLater(deviceAddress, delay)
