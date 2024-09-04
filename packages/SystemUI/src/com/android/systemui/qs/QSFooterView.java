@@ -87,7 +87,7 @@ public class QSFooterView extends FrameLayout {
     private void setBuildText() {
         if (mBuildText == null) return;
         if (DevelopmentSettingsEnabler.isDevelopmentSettingsEnabled(mContext)) {
-            mBuildText.setText("SurgeOS 15.0.24.9.3.DEV, Android " + Build.VERSION.RELEASE_OR_CODENAME +  " (" + Build.ID + ")");
+            mBuildText.setText("SurgeOS 15.0.24.9.5.DEV, Android " + Build.VERSION.RELEASE_OR_CODENAME +  " (" + Build.ID + ")");
             // Set as selected for marquee before its made visible, then it won't be announced when
             // it's made visible.
             mBuildText.setSelected(true);
